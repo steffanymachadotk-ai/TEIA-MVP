@@ -1,203 +1,232 @@
 ````markdown
-🧩 TEIA — Tecnologia Educacional Inclusiva e Adaptativa
+<div align="center">
 
-> Plataforma educacional que utiliza Inteligência Artificial para transformar e adaptar conteúdos digitais, buscando tornar a aprendizagem mais acessível e personalizada.
+  <h1>🧩 TEIA — Tecnologia Educacional Inclusiva e Adaptativa</h1>
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Node.js](https://img.shields.io/badge/Node.js-Backend-green?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-API-lightgrey?logo=express&logoColor=black)](https://expressjs.com/)
-[![Google Gemini](https://img.shields.io/badge/Google-Gemini%20API-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/steffanymachadotk-ai/TEIA-MVP)
+  <p>
+    <strong>
+      Plataforma educacional que utiliza Inteligência Artificial para adaptar
+      conteúdos e tornar experiências de aprendizagem mais acessíveis e personalizadas.
+    </strong>
+  </p>
 
+  <br/>
 
-💡 Sobre o projeto
+  <img src="assets/images/banner.png" alt="TEIA - Tecnologia Educacional Inclusiva e Adaptativa" width="850"/>
 
-O TEIA (Tecnologia Educacional Inclusiva e Adaptativa)** é um projeto de tecnologia educacional desenvolvido com foco no uso de **Inteligência Artificial para adaptação de conteúdos de aprendizagem.
+  <br/>
+  <br/>
 
-A plataforma permite trabalhar com materiais educacionais e utilizar IA para analisar e transformar esses conteúdos, criando uma experiência potencialmente mais adequada a diferentes necessidades de aprendizagem.
+  <a href="https://github.com/steffanymachadotk-ai/TEIA-MVP">
+    <img src="https://img.shields.io/badge/GitHub-Repositório-black?logo=github" alt="GitHub"/>
+  </a>
+  <img src="https://img.shields.io/badge/JavaScript-ES6%2B-yellow?logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Node.js-Backend-green?logo=node.js&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/Express-API-lightgrey?logo=express&logoColor=black" alt="Express"/>
+  <img src="https://img.shields.io/badge/Google-Gemini%20API-4285F4?logo=google&logoColor=white" alt="Google Gemini"/>
 
-O projeto surgiu a partir de uma pergunta:
+</div>
 
-> Como utilizar Inteligência Artificial para reduzir barreiras no acesso e na compreensão de conteúdos educacionais?
+---
 
-A partir dessa ideia, o TEIA combina uma aplicação web, processamento de documentos e integração com modelos de Inteligência Artificial.
+# 💡 Sobre o Projeto
 
+O **TEIA (Tecnologia Educacional Inclusiva e Adaptativa)** é uma solução de tecnologia educacional desenvolvida para explorar o uso de **Inteligência Artificial na adaptação de conteúdos de aprendizagem**.
 
-🚀 Principais funcionalidades
+A plataforma permite que o usuário forneça um conteúdo educacional e um perfil de aprendizagem. A partir dessas informações, o sistema utiliza a **API do Google Gemini** para analisar o material e gerar uma versão adaptada.
 
-- 🤖 Integração com Inteligência Artificial através da API do Google Gemini
-- 📄 Processamento de documentos educacionais
-- 💬 Interface de interação com IA
-- 🧠 Adaptação e transformação de conteúdos
-- ♿ Foco em acessibilidade e inclusão educacional
-- 📚 Utilização de materiais existentes como entrada para o processo de adaptação
-- 🌐 Interface web para interação com a solução
+O projeto combina **desenvolvimento web, processamento de documentos e Inteligência Artificial generativa** em uma única aplicação.
 
+> **Problema:** conteúdos educacionais geralmente são disponibilizados em um formato único, mesmo quando estudantes possuem diferentes necessidades e formas de aprendizagem.
 
-🧠 Como funciona
+> **Proposta:** utilizar tecnologia e Inteligência Artificial para adaptar esses conteúdos de acordo com o perfil do estudante.
 
-O fluxo principal da aplicação pode ser representado da seguinte forma:
+---
+
+# 🎯 Objetivos
+
+O principal objetivo do TEIA é explorar como a Inteligência Artificial pode ser utilizada para **reduzir barreiras no acesso e na compreensão de conteúdos educacionais**.
+
+A plataforma busca:
+
+- ♿ Tornar conteúdos potencialmente mais acessíveis;
+- 🧠 Adaptar materiais de acordo com o perfil do aluno;
+- 🤖 Utilizar Inteligência Artificial em um problema educacional real;
+- 📄 Trabalhar com conteúdos provenientes de documentos;
+- 💻 Centralizar o processo de adaptação em uma aplicação web;
+- 📚 Permitir ajustes e uma nova adaptação quando necessário.
+
+---
+
+# 🚀 Funcionalidades
+
+- 👤 Definição do perfil do aluno;
+- 📝 Inserção de atividades e conteúdos educacionais;
+- 📄 Envio de arquivos para processamento;
+- 🔎 Extração de texto de documentos;
+- 🤖 Integração com a API do Google Gemini;
+- 🧠 Comparação entre o perfil do aluno e o conteúdo da atividade;
+- ✨ Geração de conteúdo adaptado;
+- 🔄 Possibilidade de solicitar novos ajustes;
+- 📥 Exportação do conteúdo adaptado;
+- 📑 Geração de arquivos em PDF e DOCX.
+
+---
+
+# 🧠 Fluxo da Aplicação
+
+O funcionamento do TEIA pode ser representado pelo seguinte fluxo:
+
+<div align="center">
+
+<img src="assets/images/Estrutura.png" alt="Fluxograma do TEIA" width="800"/>
+
+</div>
+
+### Fluxo simplificado
 
 ```text
-                 ┌──────────────────┐
-                 │      Usuário     │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │  Interface Web   │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Node.js +        │
-                 │ Express          │
-                 └────────┬─────────┘
-                          │
-              ┌───────────┴───────────┐
-              │                       │
-              ▼                       ▼
-      ┌───────────────┐       ┌────────────────┐
-      │ Processamento │       │ Google Gemini  │
-      │ de documentos │──────►│      API       │
-      └───────────────┘       └───────┬────────┘
-                                      │
-                                      ▼
-                             ┌──────────────────┐
-                             │ Conteúdo         │
-                             │ adaptado        │
-                             └──────────────────┘
+Perfil do aluno
+       ↓
+Atividade / conteúdo
+       ↓
+Verificação do arquivo
+       ↓
+Extração do conteúdo
+       ↓
+Comparação entre perfil e atividade
+       ↓
+Google Gemini
+       ↓
+Conteúdo adaptado
+       ↓
+Ajustes
+       ↓
+Exportação em PDF ou DOCX
 ````
 
+---
 
-## 🎯 O problema
+# 🤖 Inteligência Artificial
 
-Conteúdos educacionais normalmente são disponibilizados em um formato único, mesmo quando os estudantes possuem diferentes formas de compreender, processar e interagir com as informações.
+O TEIA utiliza a **API do Google Gemini** como parte central do processo de adaptação.
 
-O TEIA explora a aplicação de Inteligência Artificial como uma camada de **adaptação e personalização do conteúdo**, buscando tornar materiais educacionais mais acessíveis.
+O modelo recebe informações relacionadas ao:
 
+* perfil do aluno;
+* conteúdo da atividade;
+* contexto necessário para a adaptação.
 
-## 🔎 Diferencial
+A aplicação então utiliza a resposta gerada pelo modelo para produzir o conteúdo adaptado.
 
-O TEIA não utiliza Inteligência Artificial apenas como um chatbot.
+A IA, portanto, não está presente apenas como um chatbot: ela participa diretamente do **processo de transformação do conteúdo educacional**.
 
-A IA faz parte de um fluxo de transformação de conteúdo:
+---
 
-```text
-Material educacional
-        ↓
-Análise do conteúdo
-        ↓
-Processamento com IA
-        ↓
-Adaptação
-        ↓
-Conteúdo transformado
-```
+# 🛠️ Tecnologias Utilizadas
 
-Essa abordagem permite explorar a IA aplicada a um problema concreto de **acessibilidade, inclusão e personalização da aprendizagem**.
+| Tecnologia               | Finalidade                                  |
+| ------------------------ | ------------------------------------------- |
+| 🟨 **JavaScript**        | Desenvolvimento da aplicação                |
+| 🟢 **Node.js**           | Ambiente de execução do back-end            |
+| ⚡ **Express**            | Servidor e definição das rotas da aplicação |
+| 🤖 **Google Gemini API** | Processamento e adaptação dos conteúdos     |
+| 📄 **unpdf**             | Extração de conteúdo de arquivos PDF        |
+| 📑 **docx**              | Processamento e geração de documentos DOCX  |
+| 📄 **PDFKit**            | Geração de arquivos PDF                     |
+| 📤 **Multer**            | Upload e processamento de arquivos          |
+| 🔗 **CORS**              | Comunicação entre diferentes origens        |
+| 🔐 **dotenv**            | Gerenciamento de variáveis de ambiente      |
+| 🐙 **Git / GitHub**      | Versionamento e colaboração                 |
 
+---
 
-## 🛠️ Tecnologias utilizadas
+# 📸 Demonstração
 
-### Front-end
+## Interface
 
-* HTML5
-* CSS3
-* JavaScript
+<div align="center">
 
-### Back-end
+<img src="assets/images/banner.png" alt="Interface do TEIA" width="850"/>
 
-* Node.js
-* Express
+</div>
+
+## Chat com Inteligência Artificial
+
+<div align="center">
+
+<img src="assets/images/CHAT.png" alt="Chat do TEIA" width="800"/>
+
+</div>
+
+## Estrutura da solução
+
+<div align="center">
+
+<img src="assets/images/Estrutura.png" alt="Estrutura da aplicação TEIA" width="800"/>
+
+</div>
+
+---
+
+# 👩‍💻 Minha Contribuição
+
+Atuei na **evolução, recuperação e organização técnica do TEIA**, trabalhando diretamente em diferentes partes da aplicação.
+
+Entre as atividades realizadas estão:
+
+* Integração da aplicação com a **API do Google Gemini**;
+* Recuperação da integração com o serviço de Inteligência Artificial;
+* Configuração e gerenciamento de variáveis de ambiente;
+* Processamento de arquivos e conteúdos educacionais;
+* Manutenção do back-end em Node.js;
+* Identificação e correção de problemas durante a execução;
+* Tratamento de erros relacionados à integração com serviços externos;
+* Organização do projeto para versionamento;
+* Aplicação de boas práticas para proteção de credenciais;
+* Publicação e organização do projeto no GitHub;
+* Documentação técnica da aplicação.
+
+---
+
+# 📈 Competências Demonstradas
+
+O desenvolvimento do TEIA proporcionou experiência prática em:
 
 ### Inteligência Artificial
 
-* Google Gemini API
+* Integração com APIs de IA;
+* Aplicação de IA generativa;
+* Engenharia de prompts;
+* Processamento e adaptação de conteúdo.
 
-### Processamento de documentos
+### Desenvolvimento
 
-* PDF
-* DOCX
-* `unpdf`
-* `pdfkit`
-* `docx`
+* JavaScript;
+* Node.js;
+* Express;
+* APIs;
+* Upload e processamento de arquivos.
 
-### Outras tecnologias
+### Engenharia de Software
 
-* Multer
-* CORS
-* dotenv
-* npm
-* Git
-* GitHub
+* Git e GitHub;
+* Gerenciamento de dependências;
+* Variáveis de ambiente;
+* Debugging;
+* Tratamento de erros;
+* Manutenção e evolução de código existente.
 
+### Tecnologia aplicada
 
-## 📸 Demonstração
+* Desenvolvimento de MVP;
+* Resolução de problemas reais;
+* Aplicação de IA em educação;
+* Acessibilidade e inclusão digital.
 
-### Interface principal
+---
 
-![Interface do TEIA](assets/images/banner.png)
-
-### Chat com Inteligência Artificial
-
-![Chat do TEIA](assets/images/CHAT.png)
-
-### Estrutura da aplicação
-
-![Estrutura do projeto](assets/images/estrutura.png)
-
-
-## ⚙️ Como executar localmente
-
-### Pré-requisitos
-
-* Node.js
-* npm
-* Uma chave da API do Google Gemini
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/steffanymachadotk-ai/TEIA-MVP.git
-```
-
-### 2. Acesse a pasta
-
-```bash
-cd TEIA-MVP
-```
-
-### 3. Instale as dependências
-
-```bash
-npm install
-```
-
-### 4. Configure a variável de ambiente
-
-Crie um arquivo `.env` na raiz do projeto:
-
-```env
-GEMINI_API_KEY=sua_chave_aqui
-```
-
-> **Importante:** nunca publique sua chave da API no GitHub.
-
-### 5. Inicie o servidor
-
-```bash
-npm start
-```
-
-O servidor será iniciado em:
-
-```text
-http://localhost:6767
-```
-
-
-## 📁 Estrutura do projeto
+# 📁 Estrutura do Projeto
 
 ```text
 TEIA-MVP/
@@ -205,7 +234,7 @@ TEIA-MVP/
 ├── assets/
 │   └── images/
 │       ├── CHAT.png
-│       ├── Estruturaa.png
+│       ├── Estrutura.png
 │       ├── banner.png
 │       ├── cmd.png
 │       ├── ensino.png
@@ -222,111 +251,143 @@ TEIA-MVP/
 └── README.md
 ```
 
+---
 
-## 👩‍💻 Minha contribuição
+# ⚙️ Como Executar Localmente
 
-Atuei na evolução e recuperação do projeto, trabalhando diretamente com a aplicação web, integração com Inteligência Artificial e processamento de documentos.
+## Pré-requisitos
 
-Entre as atividades realizadas estão:
+Antes de executar o projeto, você precisará ter instalado:
 
-* Desenvolvimento e manutenção da aplicação;
-* Integração com a API do Google Gemini;
-* Implementação e recuperação da comunicação entre aplicação e modelo de IA;
-* Processamento de arquivos e conteúdos educacionais;
-* Configuração do ambiente Node.js;
-* Identificação e correção de problemas de integração;
-* Configuração de variáveis de ambiente;
-* Organização do projeto para versionamento;
-* Aplicação de boas práticas para proteção de informações sensíveis;
-* Versionamento e publicação do projeto no GitHub;
-* Documentação técnica do projeto.
+* **Node.js**
+* **npm**
+* Navegador atualizado;
+* Uma chave válida da **Google Gemini API**.
 
+---
 
-## 🧠 Competências demonstradas
+## 1. Clone o repositório
 
-Este projeto reúne competências relacionadas às áreas de **Inteligência Artificial, desenvolvimento web e tecnologia aplicada a problemas reais**.
+```bash
+git clone https://github.com/steffanymachadotk-ai/TEIA-MVP.git
+```
 
-### Desenvolvimento
+Entre na pasta:
 
-* JavaScript
-* Node.js
-* Express
-* HTML
-* CSS
-* APIs
+```bash
+cd TEIA-MVP
+```
 
-### Inteligência Artificial
+---
 
-* Integração com APIs de IA
-* Engenharia de prompts
-* Aplicação de IA em fluxos de processamento
-* Adaptação e transformação de conteúdo
+## 2. Instale as dependências
 
-### Engenharia de software
+```bash
+npm install
+```
 
-* Git e GitHub
-* Gerenciamento de dependências com npm
-* Variáveis de ambiente
-* Debugging
-* Resolução de problemas
-* Organização de projetos
+---
 
-### Processamento de dados e documentos
+## 3. Configure a variável de ambiente
 
-* Processamento de PDF
-* Processamento de DOCX
-* Upload de arquivos
-* Transformação de conteúdo
+Crie um arquivo chamado `.env` na raiz do projeto:
 
+```env
+GEMINI_API_KEY=sua_chave_aqui
+```
 
-## 📈 Aprendizados
+> ⚠️ **Nunca publique sua chave da API no GitHub.**
 
-O desenvolvimento do TEIA proporcionou experiência prática em situações comuns do desenvolvimento de software, como:
+O arquivo `.env` já está incluído no `.gitignore` do projeto.
 
-* integração com serviços externos;
-* gerenciamento de credenciais e variáveis de ambiente;
-* diagnóstico de erros de API;
-* tratamento de indisponibilidade temporária de serviços;
-* processamento de diferentes formatos de arquivos;
-* organização de código para manutenção;
-* versionamento seguro com Git;
-* recuperação e evolução de um projeto existente.
+---
 
+## 4. Execute a aplicação
 
-## 🔮 Próximos passos
+```bash
+npm start
+```
 
-* [ ] Melhorar a personalização das adaptações
-* [ ] Ampliar os formatos de documentos suportados
-* [ ] Adicionar histórico de conteúdos processados
-* [ ] Implementar autenticação de usuários
-* [ ] Melhorar testes automatizados
-* [ ] Aprimorar a experiência da interface
-* [ ] Disponibilizar uma versão online
-* [ ] Expandir os recursos de acessibilidade
+O servidor será iniciado em:
 
+```text
+http://localhost:6767
+```
 
-## 📌 Status
+Abra o endereço no navegador.
 
-**MVP funcional - em evolução.**
+---
 
-O TEIA continua sendo aprimorado como projeto de portfólio e como experimento prático na aplicação de Inteligência Artificial a problemas de acessibilidade e educação.
+# 🔐 Segurança
 
+As credenciais utilizadas pela aplicação são armazenadas através de **variáveis de ambiente**.
 
+O arquivo `.env` não faz parte do código-fonte público do projeto e está configurado no `.gitignore`.
 
-## 👩‍💻 Desenvolvido por
+Essa abordagem evita que chaves de API sejam expostas diretamente no repositório.
+
+---
+
+# 🔮 Próximos Passos
+
+O TEIA continua em evolução. Entre os próximos aprimoramentos estão:
+
+* [ ] Melhorar a personalização das adaptações;
+* [ ] Ampliar os formatos de documentos suportados;
+* [ ] Melhorar a experiência da interface;
+* [ ] Adicionar histórico de conteúdos adaptados;
+* [ ] Implementar autenticação de usuários;
+* [ ] Criar testes automatizados;
+* [ ] Aprimorar os recursos de acessibilidade;
+* [ ] Disponibilizar uma versão online.
+
+---
+
+# 📌 Status do Projeto
+
+<div align="center">
+
+### 🟢 MVP FUNCIONAL
+
+O TEIA está em desenvolvimento contínuo e faz parte do meu portfólio de projetos em **Inteligência Artificial, desenvolvimento de software e tecnologia aplicada à educação**.
+
+</div>
+
+---
+
+# 👩‍💻 Autora
+
+<div align="center">
 
 ### Steffany Machado
 
-Estudante de **Inteligência Artificial**, interessada em desenvolvimento de soluções tecnológicas, Inteligência Artificial, dados e aplicação prática de tecnologia para resolver problemas reais.
+Estudante de **Inteligência Artificial**, com interesse em Inteligência Artificial, dados e desenvolvimento de soluções tecnológicas para problemas reais.
 
-(https://img.shields.io/badge/GitHub-Steffany%20Machado-black?logo=github)](https://github.com/steffanymachadotk-ai)
+<br/>
 
+<a href="https://github.com/steffanymachadotk-ai">
+  <img src="https://img.shields.io/badge/GitHub-Steffany%20Machado-black?logo=github" alt="GitHub"/>
+</a>
 
-## 📂 Repositório
+</div>
 
-[**Acessar o código-fonte do TEIA no GitHub →**](https://github.com/steffanymachadotk-ai/TEIA-MVP)
+---
 
+<div align="center">
+
+**🧩 TEIA — Tecnologia + Inclusão + Inteligência Artificial**
+
+<br/>
+
+⭐ Se este projeto despertou seu interesse, considere visitar o repositório e conhecer a implementação.
+
+<a href="#-teia--tecnologia-educacional-inclusiva-e-adaptativa">
+  Voltar ao topo ↑
+</a>
+
+</div>
 ```
 
-**Esse é o que eu colocaria agora no repositório.** Ele vende o TEIA como projeto técnico de verdade, mas sem inventar funcionalidades que o código não tenha.
-```
+
+
+Isso deixa o projeto com muito mais cara de **portfólio de IA** do que de simples atividade de faculdade.
