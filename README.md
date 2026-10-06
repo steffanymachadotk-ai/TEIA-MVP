@@ -374,7 +374,7 @@ Estudante de **Inteligência Artificial**, com interesse em Inteligência Artifi
 
 <div align="center">
 
-**🧩 TEIA — Tecnologia + Inclusão + Inteligência Artificial**
+**🧩 TEIA - Tecnologia + Inclusão + Inteligência Artificial**
 
 <br/>
 
