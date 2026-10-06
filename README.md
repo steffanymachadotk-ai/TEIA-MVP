@@ -145,7 +145,7 @@ Essa abordagem permite explorar a IA aplicada a um problema concreto de **acessi
 
 ### Estrutura da aplicação
 
-![Estrutura do projeto](assets/images/Estruturaa.png)
+![Estrutura do projeto](assets/images/estrutura.png)
 
 
 ## ⚙️ Como executar localmente
