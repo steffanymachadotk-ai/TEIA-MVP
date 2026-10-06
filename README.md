@@ -162,7 +162,7 @@ A IA, portanto, não está presente apenas como um chatbot: ela participa direta
 
 <div align="center">
 
-<img src="assets/images/Estrutura.png" alt="Fluxograma da aplicação TEIA" width="800"/>
+<img src="assets/images/estrutura.png" alt="Fluxograma da aplicação TEIA" width="800"/>
 
 </div>
 
