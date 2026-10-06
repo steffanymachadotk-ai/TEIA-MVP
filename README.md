@@ -1,5 +1,5 @@
 ````markdown
-# 🧩 TEIA — Tecnologia Educacional Inclusiva e Adaptativa
+🧩 TEIA — Tecnologia Educacional Inclusiva e Adaptativa
 
 > Plataforma educacional que utiliza Inteligência Artificial para transformar e adaptar conteúdos digitais, buscando tornar a aprendizagem mais acessível e personalizada.
 
@@ -12,13 +12,13 @@
 
 💡 Sobre o projeto
 
-O **TEIA (Tecnologia Educacional Inclusiva e Adaptativa)** é um projeto de tecnologia educacional desenvolvido com foco no uso de **Inteligência Artificial para adaptação de conteúdos de aprendizagem**.
+O TEIA (Tecnologia Educacional Inclusiva e Adaptativa)** é um projeto de tecnologia educacional desenvolvido com foco no uso de **Inteligência Artificial para adaptação de conteúdos de aprendizagem.
 
 A plataforma permite trabalhar com materiais educacionais e utilizar IA para analisar e transformar esses conteúdos, criando uma experiência potencialmente mais adequada a diferentes necessidades de aprendizagem.
 
 O projeto surgiu a partir de uma pergunta:
 
-> **Como utilizar Inteligência Artificial para reduzir barreiras no acesso e na compreensão de conteúdos educacionais?**
+> Como utilizar Inteligência Artificial para reduzir barreiras no acesso e na compreensão de conteúdos educacionais?
 
 A partir dessa ideia, o TEIA combina uma aplicação web, processamento de documentos e integração com modelos de Inteligência Artificial.
 
