@@ -78,7 +78,7 @@ O funcionamento do TEIA pode ser representado pelo seguinte fluxo:
 
 <div align="center">
 
-<img src="assets/images/Estrutura.png" alt="Fluxograma do TEIA" width="800"/>
+<img src="assets/images/estrutura.png" alt="Fluxograma do TEIA" width="800"/>
 
 </div>
 
