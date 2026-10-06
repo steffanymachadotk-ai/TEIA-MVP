@@ -1,157 +1,332 @@
-<div align="center">
-  <h1>🏋️ Sistema de Treinos</h1>
-  <p><strong>Aplicação web para criação e organização de treinos de academia, com acompanhamento de dados físicos e cálculo de IMC.</strong></p>
-  <br/>
-Mostrar Imagem
-Mostrar Imagem
-Mostrar Imagem
-Mostrar Imagem
+````markdown
+# 🧩 TEIA — Tecnologia Educacional Inclusiva e Adaptativa
 
-  <br/>
-Mostrar Imagem
+> Plataforma educacional que utiliza Inteligência Artificial para transformar e adaptar conteúdos digitais, buscando tornar a aprendizagem mais acessível e personalizada.
 
-</div>
-
-Sobre o Projeto
-
-O Sistema de Treinos é uma plataforma web desenvolvida para ajudar usuários a organizar sua rotina de academia de forma simples e estruturada.
-
-Cada usuário cria sua conta, informa seus dados físicos (idade, sexo, altura, peso, objetivo e nível de experiência) e monta seus próprios treinos, separados por dia da semana e por grupo muscular. A plataforma calcula automaticamente o IMC do usuário e mantém uma biblioteca de exercícios organizada por categoria, disponível para reaproveitamento entre treinos.
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Node.js](https://img.shields.io/badge/Node.js-Backend-green?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-API-lightgrey?logo=express&logoColor=black)](https://expressjs.com/)
+[![Google Gemini](https://img.shields.io/badge/Google-Gemini%20API-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/steffanymachadotk-ai/TEIA-MVP)
 
 
-Objetivos
+## 💡 Sobre o projeto
 
-O objetivo principal do projeto é facilitar a organização e o acompanhamento de treinos de academia, oferecendo uma ferramenta simples que centraliza dados físicos, planejamento semanal e histórico de exercícios em um só lugar.
+O **TEIA (Tecnologia Educacional Inclusiva e Adaptativa)** é um projeto de tecnologia educacional desenvolvido com foco no uso de **Inteligência Artificial para adaptação de conteúdos de aprendizagem**.
 
-A plataforma busca:
+A plataforma permite trabalhar com materiais educacionais e utilizar IA para analisar e transformar esses conteúdos, criando uma experiência potencialmente mais adequada a diferentes necessidades de aprendizagem.
 
+O projeto surgiu a partir de uma pergunta:
 
-Eliminar a necessidade de planilhas ou anotações em papel;
-Organizar os treinos de forma visual, por dia da semana e grupo muscular;
-Acompanhar a evolução física do usuário através do cálculo de IMC.
+> **Como utilizar Inteligência Artificial para reduzir barreiras no acesso e na compreensão de conteúdos educacionais?**
 
-
-
-Funcionalidades
+A partir dessa ideia, o TEIA combina uma aplicação web, processamento de documentos e integração com modelos de Inteligência Artificial.
 
 
-Cadastro e login de usuário com senha criptografada;
-Perfil com dados físicos (idade, sexo, altura, peso, objetivo, nível de experiência);
-Cálculo automático de IMC com classificação (abaixo do peso, normal, sobrepeso, obesidade);
-Criação de treinos organizados por dia da semana e categoria muscular;
-Biblioteca com 55 exercícios pré-cadastrados (5 por grupo muscular);
-Adição de exercícios personalizados, com séries, repetições e tempo de descanso;
-Edição e exclusão de treinos e exercícios.
+## 🚀 Principais funcionalidades
+
+- 🤖 Integração com Inteligência Artificial através da API do Google Gemini
+- 📄 Processamento de documentos educacionais
+- 💬 Interface de interação com IA
+- 🧠 Adaptação e transformação de conteúdos
+- ♿ Foco em acessibilidade e inclusão educacional
+- 📚 Utilização de materiais existentes como entrada para o processo de adaptação
+- 🌐 Interface web para interação com a solução
+
+
+## 🧠 Como funciona
+
+O fluxo principal da aplicação pode ser representado da seguinte forma:
+
+```text
+                 ┌──────────────────┐
+                 │      Usuário     │
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │  Interface Web   │
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Node.js +        │
+                 │ Express          │
+                 └────────┬─────────┘
+                          │
+              ┌───────────┴───────────┐
+              │                       │
+              ▼                       ▼
+      ┌───────────────┐       ┌────────────────┐
+      │ Processamento │       │ Google Gemini  │
+      │ de documentos │──────►│      API       │
+      └───────────────┘       └───────┬────────┘
+                                      │
+                                      ▼
+                             ┌──────────────────┐
+                             │ Conteúdo         │
+                             │ adaptado        │
+                             └──────────────────┘
+````
+
+
+## 🎯 O problema
+
+Conteúdos educacionais normalmente são disponibilizados em um formato único, mesmo quando os estudantes possuem diferentes formas de compreender, processar e interagir com as informações.
+
+O TEIA explora a aplicação de Inteligência Artificial como uma camada de **adaptação e personalização do conteúdo**, buscando tornar materiais educacionais mais acessíveis.
+
+
+## 🔎 Diferencial
+
+O TEIA não utiliza Inteligência Artificial apenas como um chatbot.
+
+A IA faz parte de um fluxo de transformação de conteúdo:
+
+```text
+Material educacional
+        ↓
+Análise do conteúdo
+        ↓
+Processamento com IA
+        ↓
+Adaptação
+        ↓
+Conteúdo transformado
+```
+
+Essa abordagem permite explorar a IA aplicada a um problema concreto de **acessibilidade, inclusão e personalização da aprendizagem**.
+
+
+## 🛠️ Tecnologias utilizadas
+
+### Front-end
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Back-end
+
+* Node.js
+* Express
+
+### Inteligência Artificial
+
+* Google Gemini API
+
+### Processamento de documentos
+
+* PDF
+* DOCX
+* `unpdf`
+* `pdfkit`
+* `docx`
+
+### Outras tecnologias
+
+* Multer
+* CORS
+* dotenv
+* npm
+* Git
+* GitHub
+
+
+## 📸 Demonstração
+
+### Interface principal
+
+![Interface do TEIA](assets/images/banner.png)
+
+### Chat com Inteligência Artificial
+
+![Chat do TEIA](assets/images/CHAT.png)
+
+### Estrutura da aplicação
+
+![Estrutura do projeto](assets/images/Estruturaa.png)
+
+
+## ⚙️ Como executar localmente
+
+### Pré-requisitos
+
+* Node.js
+* npm
+* Uma chave da API do Google Gemini
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/steffanymachadotk-ai/TEIA-MVP.git
+```
+
+### 2. Acesse a pasta
+
+```bash
+cd TEIA-MVP
+```
+
+### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+### 4. Configure a variável de ambiente
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+GEMINI_API_KEY=sua_chave_aqui
+```
+
+> **Importante:** nunca publique sua chave da API no GitHub.
+
+### 5. Inicie o servidor
+
+```bash
+npm start
+```
+
+O servidor será iniciado em:
+
+```text
+http://localhost:6767
+```
+
+
+## 📁 Estrutura do projeto
+
+```text
+TEIA-MVP/
+│
+├── assets/
+│   └── images/
+│       ├── CHAT.png
+│       ├── Estruturaa.png
+│       ├── banner.png
+│       ├── cmd.png
+│       ├── ensino.png
+│       ├── logo.png
+│       └── sobre o projeto.png
+│
+├── index.html
+├── script.js
+├── style.css
+├── server.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
+```
+
+
+## 👩‍💻 Minha contribuição
+
+Atuei na evolução e recuperação do projeto, trabalhando diretamente com a aplicação web, integração com Inteligência Artificial e processamento de documentos.
+
+Entre as atividades realizadas estão:
+
+* Desenvolvimento e manutenção da aplicação;
+* Integração com a API do Google Gemini;
+* Implementação e recuperação da comunicação entre aplicação e modelo de IA;
+* Processamento de arquivos e conteúdos educacionais;
+* Configuração do ambiente Node.js;
+* Identificação e correção de problemas de integração;
+* Configuração de variáveis de ambiente;
+* Organização do projeto para versionamento;
+* Aplicação de boas práticas para proteção de informações sensíveis;
+* Versionamento e publicação do projeto no GitHub;
+* Documentação técnica do projeto.
+
+
+## 🧠 Competências demonstradas
+
+Este projeto reúne competências relacionadas às áreas de **Inteligência Artificial, desenvolvimento web e tecnologia aplicada a problemas reais**.
+
+### Desenvolvimento
+
+* JavaScript
+* Node.js
+* Express
+* HTML
+* CSS
+* APIs
+
+### Inteligência Artificial
+
+* Integração com APIs de IA
+* Engenharia de prompts
+* Aplicação de IA em fluxos de processamento
+* Adaptação e transformação de conteúdo
+
+### Engenharia de software
+
+* Git e GitHub
+* Gerenciamento de dependências com npm
+* Variáveis de ambiente
+* Debugging
+* Resolução de problemas
+* Organização de projetos
+
+### Processamento de dados e documentos
+
+* Processamento de PDF
+* Processamento de DOCX
+* Upload de arquivos
+* Transformação de conteúdo
+
+
+## 📈 Aprendizados
+
+O desenvolvimento do TEIA proporcionou experiência prática em situações comuns do desenvolvimento de software, como:
+
+* integração com serviços externos;
+* gerenciamento de credenciais e variáveis de ambiente;
+* diagnóstico de erros de API;
+* tratamento de indisponibilidade temporária de serviços;
+* processamento de diferentes formatos de arquivos;
+* organização de código para manutenção;
+* versionamento seguro com Git;
+* recuperação e evolução de um projeto existente.
+
+
+## 🔮 Próximos passos
+
+* [ ] Melhorar a personalização das adaptações
+* [ ] Ampliar os formatos de documentos suportados
+* [ ] Adicionar histórico de conteúdos processados
+* [ ] Implementar autenticação de usuários
+* [ ] Melhorar testes automatizados
+* [ ] Aprimorar a experiência da interface
+* [ ] Disponibilizar uma versão online
+* [ ] Expandir os recursos de acessibilidade
+
+
+## 📌 Status
+
+**MVP funcional — em evolução.**
+
+O TEIA continua sendo aprimorado como projeto de portfólio e como experimento prático na aplicação de Inteligência Artificial a problemas de acessibilidade e educação.
 
 
 
-Tecnologias Utilizadas
+## 👩‍💻 Desenvolvido por
 
-As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
+### Steffany Machado
 
-TecnologiaFinalidadeMostrar Imagem PythonLinguagem principal do back-endMostrar Imagem FlaskFramework web e definição de rotasMostrar Imagem Flask-SQLAlchemyORM para comunicação com o banco de dadosMostrar Imagem PostgreSQL (Neon)Banco de dados relacionalMostrar Imagem Jinja2Motor de templates HTMLMostrar Imagem RenderHospedagem e deploy da aplicação
+Estudante de **Inteligência Artificial**, interessada em desenvolvimento de soluções tecnológicas, Inteligência Artificial, dados e aplicação prática de tecnologia para resolver problemas reais.
 
-
-Estrutura do Projeto
-
-projeto-treino-flask/
-├── app.py                  # Rotas e lógica principal (controller)
-├── models.py                # Tabelas do banco de dados (models)
-├── requirements.txt          # Dependências Python
-├── render.yaml               # Configuração de deploy do Render
-├── .python-version           # Versão do Python usada no deploy
-└── templates/
-    ├── base.html             # Layout base (navbar + estilos)
-    ├── login.html
-    ├── register.html
-    ├── dashboard.html         # Treinos organizados por dia
-    ├── treino.html            # Detalhe de um treino
-    └── perfil.html            # Dados físicos e IMC
+(https://img.shields.io/badge/GitHub-Steffany%20Machado-black?logo=github)](https://github.com/steffanymachadotk-ai)
 
 
-Dependências
+## 📂 Repositório
 
-Para executar o projeto localmente, você precisará ter instalado:
+[**Acessar o código-fonte do TEIA no GitHub →**](https://github.com/steffanymachadotk-ai/TEIA-MVP)
 
+```
 
-Python (versão 3.11 ou superior);
-pip (gerenciador de pacotes, incluído com o Python);
-Navegador atualizado (Chrome, Firefox, Edge);
-Uma variável de ambiente DATABASE_URL apontando para um banco PostgreSQL (opcional — sem ela, a aplicação usa SQLite local);
-Visual Studio Code (recomendado).
-
-
-
-Instalação
-
-Siga os passos abaixo para rodar o projeto localmente:
-
-1. Clone o repositório:
-
-bashgit clone https://github.com/lauangabriell/projeto-treino-flask.git
-cd projeto-treino-flask
-
-2. Crie um ambiente virtual:
-
-bashpython -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-3. Instale as dependências:
-
-bashpip install -r requirements.txt
-
-4. Inicie a aplicação:
-
-bashpython app.py
-
-5. Acesse no navegador:
-
-http://localhost:5000
-
-
-<div align="center">
-Nossos Colaboradores
-
-Este projeto foi desenvolvido com dedicação por:
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/lauangabriell">
-        <img src="https://github.com/lauangabriell.png" width="100px" height="100px" style="border-radius:50%;object-fit:cover;" alt="Lauan Gabriel"/>
-        <br/><b>Lauan Gabriel Pereira Lima</b>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Lanabastos">
-        <img src="https://github.com/Lanabastos.png" width="100px" height="100px" style="border-radius:50%;object-fit:cover;" alt="Lanna Grazielle"/>
-        <br/><b>Lanna Grazielle Martins Bastos</b>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/RudysGalaxy">
-        <img src="https://github.com/RudysGalaxy.png" width="100px" height="100px" style="border-radius:50%;object-fit:cover;" alt="Francisco Rudá"/>
-        <br/><b>Francisco Ruda Gomes</b>
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
-
-<h1>🚀 Aplicação online</h1>
-<p>
-  A aplicação já está online e disponível para uso:
-</p>
-<p>
-  Acesse agora:
-  <a href="https://projeto-treino-flask.onrender.com" target="_blank">
-    https://projeto-treino-flask.onrender.com
-  </a>
-</p>
-
-<div align="center">
-  <p>Projeto acadêmico.</p>
-  <p>
-    <a href="#-sistema-de-treinos">Voltar ao topo</a>
-  </p>
-</div>
+**Esse é o que eu colocaria agora no repositório.** Ele vende o TEIA como projeto técnico de verdade, mas sem inventar funcionalidades que o código não tenha.
+```
