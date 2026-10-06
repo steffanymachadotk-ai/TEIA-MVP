@@ -1,7 +1,6 @@
-````markdown
 <div align="center">
 
-  <h1>🧩 TEIA — Tecnologia Educacional Inclusiva e Adaptativa</h1>
+  <h1>🧩 TEIA - Tecnologia Educacional Inclusiva e Adaptativa</h1>
 
   <p>
     <strong>
@@ -49,27 +48,27 @@ O principal objetivo do TEIA é explorar como a Inteligência Artificial pode se
 
 A plataforma busca:
 
-- ♿ Tornar conteúdos potencialmente mais acessíveis;
-- 🧠 Adaptar materiais de acordo com o perfil do aluno;
-- 🤖 Utilizar Inteligência Artificial em um problema educacional real;
-- 📄 Trabalhar com conteúdos provenientes de documentos;
-- 💻 Centralizar o processo de adaptação em uma aplicação web;
-- 📚 Permitir ajustes e uma nova adaptação quando necessário.
+* ♿ Tornar conteúdos potencialmente mais acessíveis;
+* 🧠 Adaptar materiais de acordo com o perfil do aluno;
+* 🤖 Utilizar Inteligência Artificial em um problema educacional real;
+* 📄 Trabalhar com conteúdos provenientes de documentos;
+* 💻 Centralizar o processo de adaptação em uma aplicação web;
+* 📚 Permitir ajustes e uma nova adaptação quando necessário.
 
 ---
 
 # 🚀 Funcionalidades
 
-- 👤 Definição do perfil do aluno;
-- 📝 Inserção de atividades e conteúdos educacionais;
-- 📄 Envio de arquivos para processamento;
-- 🔎 Extração de texto de documentos;
-- 🤖 Integração com a API do Google Gemini;
-- 🧠 Comparação entre o perfil do aluno e o conteúdo da atividade;
-- ✨ Geração de conteúdo adaptado;
-- 🔄 Possibilidade de solicitar novos ajustes;
-- 📥 Exportação do conteúdo adaptado;
-- 📑 Geração de arquivos em PDF e DOCX.
+* 👤 Definição do perfil do aluno;
+* 📝 Inserção de atividades e conteúdos educacionais;
+* 📄 Envio de arquivos para processamento;
+* 🔎 Extração de texto de documentos;
+* 🤖 Integração com a API do Google Gemini;
+* 🧠 Análise do perfil do aluno em conjunto com o conteúdo da atividade;
+* ✨ Geração de conteúdo adaptado;
+* 🔄 Possibilidade de solicitar novos ajustes;
+* 📥 Exportação do conteúdo adaptado;
+* 📑 Geração de arquivos em PDF e DOCX.
 
 ---
 
@@ -94,7 +93,7 @@ Verificação do arquivo
        ↓
 Extração do conteúdo
        ↓
-Comparação entre perfil e atividade
+Análise do perfil e da atividade
        ↓
 Google Gemini
        ↓
@@ -103,7 +102,7 @@ Conteúdo adaptado
 Ajustes
        ↓
 Exportação em PDF ou DOCX
-````
+```
 
 ---
 
@@ -159,11 +158,11 @@ A IA, portanto, não está presente apenas como um chatbot: ela participa direta
 
 </div>
 
-## Estrutura da solução
+## Fluxo da solução
 
 <div align="center">
 
-<img src="assets/images/Estrutura.png" alt="Estrutura da aplicação TEIA" width="800"/>
+<img src="assets/images/Estrutura.png" alt="Fluxograma da aplicação TEIA" width="800"/>
 
 </div>
 
@@ -298,7 +297,7 @@ GEMINI_API_KEY=sua_chave_aqui
 
 > ⚠️ **Nunca publique sua chave da API no GitHub.**
 
-O arquivo `.env` já está incluído no `.gitignore` do projeto.
+O arquivo `.env` está incluído no `.gitignore` do projeto.
 
 ---
 
@@ -381,13 +380,12 @@ Estudante de **Inteligência Artificial**, com interesse em Inteligência Artifi
 
 ⭐ Se este projeto despertou seu interesse, considere visitar o repositório e conhecer a implementação.
 
+<br/>
+
 <a href="#-teia--tecnologia-educacional-inclusiva-e-adaptativa">
   Voltar ao topo ↑
 </a>
 
 </div>
-```
 
 
-
-Isso deixa o projeto com muito mais cara de **portfólio de IA** do que de simples atividade de faculdade.
