@@ -10,7 +10,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/steffanymachadotk-ai/TEIA-MVP)
 
 
-## 💡 Sobre o projeto
+💡 Sobre o projeto
 
 O **TEIA (Tecnologia Educacional Inclusiva e Adaptativa)** é um projeto de tecnologia educacional desenvolvido com foco no uso de **Inteligência Artificial para adaptação de conteúdos de aprendizagem**.
 
@@ -23,7 +23,7 @@ O projeto surgiu a partir de uma pergunta:
 A partir dessa ideia, o TEIA combina uma aplicação web, processamento de documentos e integração com modelos de Inteligência Artificial.
 
 
-## 🚀 Principais funcionalidades
+🚀 Principais funcionalidades
 
 - 🤖 Integração com Inteligência Artificial através da API do Google Gemini
 - 📄 Processamento de documentos educacionais
@@ -34,7 +34,7 @@ A partir dessa ideia, o TEIA combina uma aplicação web, processamento de docum
 - 🌐 Interface web para interação com a solução
 
 
-## 🧠 Como funciona
+🧠 Como funciona
 
 O fluxo principal da aplicação pode ser representado da seguinte forma:
 
@@ -307,7 +307,7 @@ O desenvolvimento do TEIA proporcionou experiência prática em situações comu
 
 ## 📌 Status
 
-**MVP funcional — em evolução.**
+**MVP funcional - em evolução.**
 
 O TEIA continua sendo aprimorado como projeto de portfólio e como experimento prático na aplicação de Inteligência Artificial a problemas de acessibilidade e educação.
 
