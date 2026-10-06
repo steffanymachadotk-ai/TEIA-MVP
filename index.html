@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEIA — Tecnologia Educacional Inclusiva e Adaptativa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ======================================================
+       PÁGINA 1: INÍCIO DO SITE
+       ====================================================== -->
+  <main class="pagina ativa" id="pagina-inicio">
+    <header class="header-sticky">
+      <div class="container">
+        <nav class="menu">
+          <a class="logo" onclick="mostrarPagina('inicio')">Teia<img src="TEIA_icone_app_512x512.png" class="logo-icone" alt="logo TEIA" /></a>
+
+          <ul class="links-menu">
+            <li><a onclick="mostrarPagina('inicio')">Início</a></li>
+            <li><a onclick="irParaSecao('ensino-inclusivo')">Ensino Inclusivo</a></li>
+            <li><a onclick="irParaSecao('metodo')">Método</a></li>
+            <li><a onclick="irParaSecao('funcionamento')">Funcionamento</a></li>
+            <li><a onclick="irParaSecao('impacto')">Impacto</a></li>
+          </ul>
+
+          <a class="botao-menu" onclick="mostrarPagina('chat')">Testar</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="inicio">
+        <div>
+          <div class="etiqueta"><span class="ponto"></span> Educação inclusiva com IA</div>
+
+          <h1>
+            Cada aluno,<br>
+            uma <span class="italico"><span class="azul">ada</span><span class="vermelho">pta</span><span
+                class="amarelo">ção</span></span><br>
+            <span class="marcado">única.</span>
+          </h1>
+
+          <p class="texto-inicial">
+            A TEIA adapta atividades escolares para estudantes com
+            <strong>Transtorno do Espectro Autista</strong>, considerando nível de suporte,
+            faixa etária, perfil sensorial e estratégias baseadas em <strong>ABA</strong>.
+          </p>
+
+          <div class="botoes-inicio">
+            <a class="botao botao-principal" onclick="mostrarPagina('chat')">Testar plataforma →</a>
+            <a class="botao botao-secundario" onclick="irParaSecao('ensino-inclusivo')">Entender a proposta</a>
+          </div>
+
+          <div class="dados">
+            <div class="dado-card">
+              <span class="numero">+44<span class="unidade">,4%</span></span>
+              <span class="legenda">CRESCIMENTO DE MATRÍCULAS TEA ENTRE 2023 E 2024</span>
+            </div>
+
+            <div class="dado-card">
+              <span class="numero">64<span class="unidade">%</span></span>
+              <span class="legenda">DOS PROFESSORES APONTARAM A ADAPTAÇÃO COMO TAREFA DE MAIOR TEMPO EXTRA</span>
+            </div>
+
+            <div class="dado-card">
+              <span class="numero">IA</span>
+              <span class="legenda">APOIO PARA GERAR ATIVIDADES MAIS ACESSÍVEIS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="area-teia" aria-hidden="true">
+          <!-- SVG é só o desenho da teia. Pode deixar como está. -->
+          <svg class="teia-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="corLinhaTeia" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4d9de0" stop-opacity="0.95" />
+                <stop offset="50%" stop-color="#f5c842" stop-opacity="0.62" />
+                <stop offset="100%" stop-color="#f07070" stop-opacity="0.78" />
+              </linearGradient>
+              <radialGradient id="corAzul">
+                <stop offset="0%" stop-color="#9fd3ff" />
+                <stop offset="100%" stop-color="#1a6fc4" />
+              </radialGradient>
+              <radialGradient id="corAmarelo">
+                <stop offset="0%" stop-color="#fff2a8" />
+                <stop offset="100%" stop-color="#f5c842" />
+              </radialGradient>
+              <radialGradient id="corVermelha">
+                <stop offset="0%" stop-color="#ffb3b3" />
+                <stop offset="100%" stop-color="#d93b3b" />
+              </radialGradient>
+            </defs>
+
+            <circle cx="300" cy="300" r="190" fill="#1a6fc4" opacity="0.05" />
+
+            <path class="linha-principal" d="M300 300 Q185 185 120 135" />
+            <path class="linha-principal" d="M300 300 Q425 180 500 130" />
+            <path class="linha-principal" d="M300 300 Q465 285 525 280" />
+            <path class="linha-principal" d="M300 300 Q455 420 485 475" />
+            <path class="linha-principal" d="M300 300 Q305 470 320 525" />
+            <path class="linha-principal" d="M300 300 Q170 450 115 475" />
+            <path class="linha-principal" d="M300 300 Q125 300 75 280" />
+            <path class="linha-principal" d="M300 300 Q225 125 260 75" />
+
+            <path class="linha-suave" stroke="#4d9de0" d="M120 135 Q230 255 525 280" />
+            <path class="linha-suave" stroke="#f5c842" d="M500 130 Q425 260 115 475" />
+            <path class="linha-suave" stroke="#f07070" d="M75 280 Q220 325 485 475" />
+            <path class="linha-suave" stroke="#4d9de0" d="M260 75 Q300 220 320 525" />
+            <path class="linha-suave" stroke="#4d9de0" d="M120 135 Q275 90 500 130" />
+            <path class="linha-suave" stroke="#f5c842" d="M115 475 Q290 565 485 475" />
+
+            <circle cx="300" cy="300" r="42" fill="#1a6fc4" opacity="0.16" />
+            <circle cx="300" cy="300" r="19" fill="url(#corAzul)" />
+            <circle cx="300" cy="300" r="6" fill="#fff" opacity=".9" />
+
+            <circle cx="120" cy="135" r="10" class="no-azul" />
+            <circle cx="500" cy="130" r="10" class="no-amarelo" />
+            <circle cx="525" cy="280" r="9" class="no-vermelho" />
+            <circle cx="485" cy="475" r="10" class="no-amarelo" />
+            <circle cx="320" cy="525" r="8" class="no-azul" />
+            <circle cx="115" cy="475" r="10" class="no-vermelho" />
+            <circle cx="75" cy="280" r="8" class="no-azul" />
+            <circle cx="260" cy="75" r="9" class="no-amarelo" />
+          </svg>
+        </div>
+      </section>
+    </div>
+
+    <section class="secao" id="ensino-inclusivo">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div class="titulo-pequeno">Ensino Inclusivo</div>
+          <h2>Inclusão exige adaptação real.</h2>
+          <p class="texto-secao">
+            A aprendizagem acontece melhor quando as atividades respeitam diferenças cognitivas, sensoriais
+            e formas individuais de processamento.
+          </p>
+        </div>
+
+        <div class="grade-3">
+          <article class="card">
+            <div class="passo-numero">1</div>
+            <h3>Materiais pouco adaptáveis</h3>
+            <p>A maioria das atividades escolares foi criada para um modelo único de aprendizagem e não considera diferentes perfis cognitivos e sensoriais.</p>
+          </article>
+
+          <article class="card">
+            <div class="passo-numero">2</div>
+            <h3>Sobrecarga na adaptação manual</h3>
+            <p>Professores precisam reorganizar conteúdos manualmente, tornando a adaptação lenta, cansativa e difícil de escalar no dia a dia escolar.</p>
+          </article>
+
+          <article class="card">
+            <div class="passo-numero">3</div>
+            <h3>Adaptação guiada por perfil</h3>
+            <p>A TEIA utiliza informações do perfil de aprendizagem do estudante para gerar atividades mais acessíveis, previsíveis e pedagogicamente organizadas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="metodo">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div class="titulo-pequeno">Método</div>
+          <h2>Adaptação pedagógica baseada em perfil cognitivo e acessibilidade educacional.</h2>
+          <p class="texto-secao">
+            A plataforma utiliza princípios de neuroeducação, acessibilidade cognitiva, ABA, funções executivas
+            e educação inclusiva para personalizar atividades conforme o perfil funcional de aprendizagem do estudante.
+          </p>
+        </div>
+
+        <div class="lista-metodo lista-metodo-completa">
+          <div class="item-metodo"><strong>1. Perfil funcional de aprendizagem</strong><span>O sistema identifica características cognitivas, sensoriais, comunicacionais e pedagógicas relevantes para compreender barreiras de aprendizagem e orientar adaptações individualizadas.</span></div>
+          <div class="item-metodo"><strong>2. Linguagem cognitivamente acessível</strong><span>Os enunciados são reorganizados com linguagem objetiva, previsível e menos ambígua, reduzindo demandas excessivas de interpretação e processamento.</span></div>
+          <div class="item-metodo"><strong>3. Fragmentação e redução de carga cognitiva</strong><span>Instruções complexas são divididas em pequenas etapas para facilitar atenção sustentada, compreensão e execução progressiva.</span></div>
+          <div class="item-metodo"><strong>4. Estruturação visual e previsibilidade</strong><span>A organização visual das atividades favorece previsibilidade, orientação espacial e suporte ao processamento visual da informação.</span></div>
+          <div class="item-metodo"><strong>5. Engajamento baseado em interesses</strong><span>Quando adequado pedagogicamente, elementos de interesse do estudante podem ser utilizados para ampliar motivação e participação na atividade.</span></div>
+        </div>
+
+        <div class="bases-metodo">
+          <span class="titulo-pequeno">Bases utilizadas</span>
+          <div class="bases-lista">
+            <span class="base-tag">Educação inclusiva</span>
+            <span class="base-tag">Neuroeducação</span>
+            <span class="base-tag">Acessibilidade cognitiva</span>
+            <span class="base-tag">Funções executivas</span>
+            <span class="base-tag">ABA</span>
+            <span class="base-tag">TEACCH</span>
+            <span class="base-tag">DSM-5-TR</span>
+            <span class="base-tag">Estratégias pedagógicas estruturadas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="funcionamento">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div class="titulo-pequeno">Funcionamento</div>
+          <h2>Um fluxo simples para o professor.</h2>
+        </div>
+
+        <div class="grade-5">
+          <article class="card">
+            <div class="passo-numero">1</div>
+            <h3>Perfil</h3>
+            <p>Responda 9 perguntas sobre o estudante: série, disciplina, habilidade, nível de suporte, funções executivas, perfil sensorial, linguagem, aprendizagem e formato desejado.</p>
+          </article>
+          <article class="card">
+            <div class="passo-numero">2</div>
+            <h3>Atividade</h3>
+            <p>Cole o texto da atividade no chat ou envie um arquivo PDF, DOC, DOCX ou TXT diretamente.</p>
+          </article>
+          <article class="card">
+            <div class="passo-numero">3</div>
+            <h3>Adaptação</h3>
+            <p>A TEIA analisa o perfil completo e adapta todas as questões com base em TEACCH, ABA e DSM-5-TR, reduzindo barreiras cognitivas.</p>
+          </article>
+          <article class="card">
+            <div class="passo-numero">4</div>
+            <h3>Ajustes</h3>
+            <p>O professor revisa a adaptação no chat e pode pedir ajustes diretamente — como refazer uma questão ou simplificar mais.</p>
+          </article>
+          <article class="card">
+            <div class="passo-numero">5</div>
+            <h3>Download</h3>
+            <p>Baixe a atividade adaptada em PDF ou DOCX, pronta para imprimir ou editar no Word.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="impacto">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div class="titulo-pequeno">Impacto</div>
+          <h2>Menos tempo adaptando. Mais tempo ensinando.</h2>
+          <p class="texto-secao">
+            A TEIA auxilia professores na criação de adaptações pedagógicas mais rápidas, acessíveis e organizadas,
+            reduzindo sobrecarga e ampliando a participação de estudantes neurodivergentes no ambiente escolar.
+          </p>
+        </div>
+
+        <div class="grade-4">
+          <article class="card">
+            <div class="passo-numero">1</div>
+            <h3>Redução da sobrecarga docente</h3>
+            <p>Adaptações que antes exigiam reorganização manual extensa podem ser estruturadas de forma mais rápida e previsível.</p>
+          </article>
+
+          <article class="card">
+            <div class="passo-numero">2</div>
+            <h3>Mais segurança pedagógica</h3>
+            <p>O professor recebe apoio para adaptar atividades sem perder objetivos pedagógicos e acessibilidade cognitiva.</p>
+          </article>
+
+          <article class="card">
+            <div class="passo-numero">3</div>
+            <h3>Participação mais acessível</h3>
+            <p>Estudantes conseguem compreender instruções com mais clareza, reduzindo frustração e barreiras de aprendizagem.</p>
+          </article>
+
+          <article class="card">
+            <div class="passo-numero">4</div>
+            <h3>Inclusão com permanência</h3>
+            <p>A adaptação adequada favorece participação, pertencimento e continuidade no processo educacional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <p class="rodape">TEIA · Tecnologia Educacional Inclusiva e Adaptativa · 2026</p>
+    </div>
+  </main>
+
+  <!-- ======================================================
+       PÁGINA 2: CHAT COM IA ADAPTADORA
+       ====================================================== -->
+  <main class="pagina" id="pagina-chat">
+    <div class="container">
+      <nav class="menu menu-chat">
+        <a class="logo" onclick="mostrarPagina('inicio')">Teia<img src="TEIA_icone_app_512x512.png" class="logo-icone" alt="logo TEIA" /></a>
+        <a class="botao-voltar" onclick="mostrarPagina('inicio')">← Voltar ao início</a>
+      </nav>
+
+      <section class="chat-layout">
+        <section class="area-chat">
+          <div class="chat-caixa">
+            <div class="chat-topo">
+              <strong>Assistente TEIA</strong>
+              <span class="chat-status">
+                <span class="bolinha-online"></span>IA conectada
+              </span>
+            </div>
+
+            <div class="mensagens" id="mensagens"></div>
+
+            <div class="formulario-chat">
+              <div>
+                <label for="mensagem-chat">Mensagem</label>
+                <textarea id="mensagem-chat"
+                  placeholder="Digite sua resposta, cole a atividade ou envie um arquivo..."></textarea>
+              </div>
+
+              <input type="file" id="arquivo-atividade" accept=".pdf,.doc,.docx,.txt" style="display:none" />
+
+              <div class="linha-envio">
+                <button class="botao-anexo" id="btn-anexo" type="button" title="Anexar arquivo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                  </svg>
+                  <span id="nome-arquivo" class="nome-arquivo"></span>
+                </button>
+
+                <button class="botao botao-principal" id="btn-enviar-chat" type="button">
+                  Enviar →
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
